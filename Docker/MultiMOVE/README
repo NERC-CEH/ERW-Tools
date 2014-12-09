@@ -1,0 +1,12 @@
+Simple Dockerfile and R scripts to create an image with the requried R packages in to run a model
+
+The MultiMOVE model is *not* included as this must be obtained from CEDA.
+
+The Docker image should be built using the  Docker build tool
+
+The file packages_required specifies the R packages which will be obtained from the CRAN repo
+
+The directory local_packages should contain all the packages in .tar.gz format that need to be installed (e.g. MultiMOVE). The specific packages are called out in local_packages_required
+
+Rinstalllpackages.r installs CRAN repo packages specified in packages_required
+Rinstalllocalpackages.r installs local/source packages t are specified by local_packages_required.
